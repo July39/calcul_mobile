@@ -26,19 +26,18 @@ class Button extends React.Component {
 const styles = StyleSheet.create({
     button: {
         flex: 1,
-        borderColor: "#321",
+        borderColor: "#5ac6f6",
         borderRadius: 5,
-        borderWidth: 1,
+        borderWidth: 2,
         margin: 5,
         padding: 10,
-        backgroundColor: 'lightblue',
         alignItems: "center", 
         justifyContent: "center",
     },
 
     text: {
         fontSize: 40, 
-        color: "black",
+        color: "white",
         fontWeight: "bold"
     }
 })
