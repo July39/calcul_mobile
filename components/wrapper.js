@@ -20,9 +20,9 @@ class Wrapper extends React.Component {
 const styles = StyleSheet.create({
     wrapper: {
         flex: 1,
-        height: 800,
-        width: 600,
-        borderColor: "#f00",
+        height: "100%",
+        width: "100%",
+        borderColor: "red",
         borderRadius: 10,
         borderWidth: 1
     }

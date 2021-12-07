@@ -8,6 +8,7 @@ class Screen extends React.Component {
     render() {
         return (
             <View style={styles.screen}>
+                
             </View>
         )
     }
@@ -15,11 +16,13 @@ class Screen extends React.Component {
 
 const styles = StyleSheet.create({
     screen: {
-        height: 80,
-        justifyContent: 'center',
+        height: "20%",
+
         borderColor: "#0f0",
-        borderRadius: 5,
-        borderWidth: 1
+        borderRadius: 10,
+        borderWidth: 1,
+
+        margin: 20
     }
 })
 
