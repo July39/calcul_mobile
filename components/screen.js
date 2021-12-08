@@ -18,16 +18,16 @@ const styles = StyleSheet.create({
     screen: {
         height: "20%",
 
-        borderColor: "#0f0",
+        borderColor: "#5ac6f6",
         borderRadius: 10,
-        borderWidth: 1,
-
+        borderWidth: 2,
         margin: 20
     },
 
     text: {
         fontSize: 30, 
         color: "white",
+        textAlign: 'right',
         fontWeight: "bold"
     }
 })

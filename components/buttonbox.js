@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
     buttonBox: {
         flex: 1,
 
-        borderColor: "#00f",
-        borderWidth: 1,
+        borderColor: "#5ac6f6",
+        borderWidth: 2,
         borderRadius: 10,
 
         marginLeft: 20,
