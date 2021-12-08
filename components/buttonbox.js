@@ -19,7 +19,7 @@ class ButtonBox extends React.Component {
                     <Button text="4" onPress={(key) => { this.props.onPress(key) }}/>
                     <Button text="5" onPress={(key) => { this.props.onPress(key) }}/>
                     <Button text="6" onPress={(key) => { this.props.onPress(key) }}/>
-                    <Button text="x" onPress={(key) => { this.props.onPress(key) }}/>
+                    <Button text="*" onPress={(key) => { this.props.onPress(key) }}/>
                 </View>
                 <View style={styles.buttonRow}>
                     <Button text="1" onPress={(key) => { this.props.onPress(key) }}/>

@@ -8,14 +8,33 @@ import Buttonbox from './buttonbox';
 
 class Wrapper extends React.Component {
 
+    state = {
+        accumulator: null
+    };
+
     onPress(key) {
-        alert('key');
+        let accumulator = null;
+        if (key === '=') {
+            accumulator = eval(this.state.accumulator);
+        }
+        else {
+            accumulator = this.state.accumulator += key;
+        }
+        this.setState({
+            accumulator: accumulator
+        });
+    }
+
+    componentDidMount() {
+        this.setState({
+            accumulator: ''
+        });
     }
 
     render() {
         return (
             <View style={styles.wrapper}>
-                <Screen></Screen>
+                <Screen accumulator={this.state.accumulator}/>
                 <Buttonbox onPress={(key) => { this.onPress(key) }}/>
             </View>
         )
