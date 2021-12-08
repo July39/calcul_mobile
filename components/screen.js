@@ -1,14 +1,14 @@
 
 
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, TextInput } from 'react-native'
 
 
 class Screen extends React.Component {
     render() {
         return (
             <View style={styles.screen}>
-                <Text style={styles.text}>{this.props.accumulator}</Text>
+                <TextInput placeholder="0" placeholderTextColor={'white'} style={styles.text}>{this.props.accumulator}</TextInput>
             </View>
         )
     }
@@ -16,8 +16,7 @@ class Screen extends React.Component {
 
 const styles = StyleSheet.create({
     screen: {
-        height: "20%",
-
+        height: "15%",
         borderColor: "#5ac6f6",
         borderRadius: 10,
         borderWidth: 2,
@@ -25,10 +24,12 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        fontSize: 30, 
+        fontSize: 40, 
         color: "white",
-        textAlign: 'right',
-        fontWeight: "bold"
+        textAlign: "right",
+        fontWeight: "bold",
+        marginTop: 30,
+        marginRight:10,
     }
 })
 

@@ -14,7 +14,6 @@ import { StyleSheet, TouchableOpacity, Text } from 'react-native'
 
 class Button extends React.Component {
     render() {
-        console.log(this.props.text);
         return (
             <TouchableOpacity style={styles.button} onPress={() => {this.props.onPress(this.props.text);}}>
                 <Text style={styles.text}>{this.props.text}</Text>

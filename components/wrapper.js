@@ -13,16 +13,26 @@ class Wrapper extends React.Component {
     };
 
     onPress(key) {
-        let accumulator = null;
-        if (key === '=') {
-            accumulator = eval(this.state.accumulator);
+        let accumulator = '';
+        switch (key) {
+            case 'C':
+                accumulator = '';
+                break;
+            case '+/-':
+                accumulator *= -1;
+                accumulator = eval(this.state.accumulator);
+                break;
+            case '=':
+                accumulator = eval(this.state.accumulator);
+                break;
+            case '<-':
+                accumulator = this.state.accumulator.substring(0, this.state.accumulator.length - 1);
+                break;
+            default:
+
+                accumulator = this.state.accumulator += key;
         }
-        else {
-            accumulator = this.state.accumulator += key;
-        }
-        this.setState({
-            accumulator: accumulator
-        });
+        this.setState({accumulator: accumulator});
     }
 
     componentDidMount() {
@@ -46,7 +56,6 @@ const styles = StyleSheet.create({
         flex: 1,
         height: "100%",
         width: "100%",
-        borderColor: "red",
         borderRadius: 10,
         borderWidth: 1
     }
