@@ -7,11 +7,16 @@ import Buttonbox from './buttonbox';
 
 
 class Wrapper extends React.Component {
+
+    onPress(key) {
+        alert('key');
+    }
+
     render() {
         return (
             <View style={styles.wrapper}>
                 <Screen></Screen>
-                <Buttonbox></Buttonbox>
+                <Buttonbox onPress={(key) => { this.onPress(key) }}/>
             </View>
         )
     }

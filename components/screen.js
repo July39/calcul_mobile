@@ -8,7 +8,6 @@ class Screen extends React.Component {
     render() {
         return (
             <View style={styles.screen}>
-                
             </View>
         )
     }
