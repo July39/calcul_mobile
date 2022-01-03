@@ -12,7 +12,7 @@ class ButtonBox extends React.Component {
                 <View style={styles.topButtonRow}>
                     <Button text="C" onPress={(key) => { this.props.onPress(key) }}/>
                     <Button text="<-" onPress={(key) => { this.props.onPress(key) }}/>
-                    <Button text="+-" onPress={(key) => { this.props.onPress(key) }}/>
+                    <Button text="+/-" onPress={(key) => { this.props.onPress(key) }}/>
                     <Button text="+" onPress={(key) => { this.props.onPress(key) }}/>
                 </View>                    
                 <View style={styles.buttonRow}>
